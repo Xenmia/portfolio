@@ -4,7 +4,7 @@ import ThemeToggle from "./ButtonToggleTheme";
 
 const NavBar = () => {
   return (
-    <div className="flex flex-row sticky justify-center items-center w-full h-fit p-2">
+    <div className="flex flex-row sticky justify-center items-center w-full h-fit p-2 top-0 bg-primary-light dark:bg-primary-dark border-2 border-border-light dark:border-border-dark">
       <ul
         className="flex gap-4 text-t-light dark:text-t-dark justify-center text-2xl w-fit *:hover:text-interactive-light *:dark:hover:text-interactive-light
       *:transition-all *:duration-250 *:ease-in-out"

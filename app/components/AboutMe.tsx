@@ -4,7 +4,7 @@ import Portrait from "../pictures/Portrait_Placeholder.png";
 
 const AboutMe = () => {
   return (
-    <div className="flex gap-4 m-10 rounded-[2rem] overflow-hidden border-2 border-border-light dark:border-border-dark bg-elements-light dark:bg-elements-dark shadow-2xl">
+    <div className="flex gap-4 m-10 rounded-[2rem] min-h-80 overflow-hidden border-2 border-border-light dark:border-border-dark bg-elements-light dark:bg-elements-dark shadow-2xl">
       <Image alt="Portrait Picture" src={Portrait} className="" />
       <div className="flex flex-col justify-evenly text-t-light dark:text-t-dark">
         <h1 className="text-4xl">Maxim Banaga</h1>
