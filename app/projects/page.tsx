@@ -1,10 +1,7 @@
 import React from "react";
-import NavBar from "../components/NavBar";
-
 const Projects = () => {
   return (
-    <div>
-      <NavBar />
+    <div className="bg-primary-light dark:bg-primary-dark">
       <p>Projects</p>
     </div>
   );

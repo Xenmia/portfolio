@@ -1,11 +1,8 @@
 import React from "react";
-import NavBar from "../components/NavBar";
-
 const Contact = () => {
   return (
-    <div>
-      <NavBar />
-      Contact
+    <div className="bg-primary-light dark:bg-primary-dark">
+      <p>Contact</p>
     </div>
   );
 };

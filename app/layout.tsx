@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import NavBar from "./components/NavBar";
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: "Maxim Portfolio",
@@ -13,8 +15,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body>{children}</body>
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+      <body className="**:transition-all **:duration-200 **:ease-in-out">
+        <Providers>
+          <NavBar />
+          {children}
+        </Providers>
+      </body>
     </html>
   );
 }
