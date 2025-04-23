@@ -1,17 +1,12 @@
 "use client";
 import { useRef, useState } from "react";
-import { Kanit, Inter } from "next/font/google";
+import { Kanit } from "next/font/google";
 import Socials from "./Socials";
 
 const kanit = Kanit({
   subsets: ["latin"],
   display: "swap",
   weight: "300",
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
 });
 
 const ContactMe = () => {
