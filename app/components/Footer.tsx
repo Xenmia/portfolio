@@ -10,7 +10,7 @@ const Footer = () => {
         Resume
       </a>
       <p>
-        Let's colaborate! Reach out at{" "}
+        Let&apos;s colaborate! Reach out at{" "}
         <a href="mailto:banagamaxim13@gmail.com">banagamaxim13@gmail.com</a>
       </p>
       <p>Made with Next.js & coffee.</p>

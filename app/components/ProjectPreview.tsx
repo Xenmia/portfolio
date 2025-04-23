@@ -1,5 +1,4 @@
 import React from "react";
-import projectPreview from "../pictures/projectPreview.webp";
 import mockup from "../pictures/boanex-mockup-dark.webp";
 import Image from "next/image";
 import { Kanit, Inter } from "next/font/google";
@@ -49,8 +48,9 @@ const ProjectPreview = () => {
       <Link
         className="text-interactive-light dark:text-interactive-dark hover:underline text-4xl place-self-end my-auto px-4 pb-2"
         href="../projects"
-        children="See more projects"
-      />
+      >
+        See more projects
+      </Link>
     </div>
   );
 };
