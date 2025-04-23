@@ -5,19 +5,26 @@
 @theme {
   /* DARK THEME */
   --color-primary-dark: #121212;
-  --color-secondary-dark: #7fa3ff;
+  --color-secondary-dark: #1a73e8;
   --color-t-dark: #f5f5f5;
   --color-subtext-dark: #b0b0b0;
   --color-elements-dark: #252525;
-  --color-border-dark: #3a3a3a;
+  --color-border-dark: #474747;
   --color-interactive-dark: #4dbfac;
 
   /* LIGHT THEME */
   --color-primary-light: #f8f8f8;
-  --color-secondary-light: #1a73e8;
+  --color-secondary-light: #7fa3ff;
   --color-t-light: #333333;
   --color-subtext-light: #757575;
   --color-elements-light: #ffffff;
-  --color-border-light: #e0e0e0;
+  --color-border-light: #969696;
   --color-interactive-light: #00bfa5;
+
+  /* BACKGROUND GRADIENT */
+  --gradient-bg-light: linear-gradient(#b6b9ff 2px, transparent 2px),
+    linear-gradient(to right, #b6b9ff 2px, #ffffff 2px);
+
+  --gradient-bg-dark: linear-gradient(#2f3165 2px, transparent 2px),
+    linear-gradient(to right, #2f3165 2px, var(--color-primary-dark) 2px);
 }
