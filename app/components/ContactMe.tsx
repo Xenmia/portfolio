@@ -49,8 +49,8 @@ const ContactMe = () => {
 
   return (
     <div
-      className="flex flex-col flex-1/3 my-5 mr-5 p-4 border-border-light dark:border-border-dark border-4 rounded-2xl 
-    bg-elements-light dark:bg-elements-dark "
+      className="flex flex-col flex-1/3 my-5 mr-5 p-4 border-border-light dark:border-border-dark border-2 rounded-2xl 
+    bg-elements-light dark:bg-elements-dark shadow-2xl"
     >
       <h1 className={"text-4xl self-center " + kanit.className}>CONTACT ME</h1>
       <form
