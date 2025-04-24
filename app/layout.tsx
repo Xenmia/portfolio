@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
-      <body className="**:transition-all **:duration-200 **:ease-in-out bg-primary-light dark:bg-primary-dark">
+      <body className="bg-background-light dark:bg-background-dark">
         <Providers>
           <NavBar />
           {children}
