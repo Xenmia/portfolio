@@ -19,7 +19,7 @@ const ProjectPreview = () => {
   return (
     <div
       className="flex flex-col flex-2/3 border-muted-light dark:border-muted-dark border-2 
-    bg-background-light dark:bg-background-dark m-5 overflow-hidden origin-left rounded-4xl shadow-2xl"
+    bg-background-light dark:bg-background-dark overflow-hidden origin-left rounded-4xl shadow-2xl"
     >
       <a
         className="decoration-text-light dark:decoration-text-dark flex flex-col lg:flex-row"
@@ -50,7 +50,7 @@ const ProjectPreview = () => {
       </a>
       <Link
         className="text-text-light dark:text-text-dark hover:underline text-4xl 
-        lg:place-self-end my-auto place-self-center lg:px-4 pb-2 font-semibold 
+        lg:place-self-end my-auto place-self-center lg:px-4 pb-2 
         hover:text-secondary-light dark:hover:text-secondary-dark "
         href="../projects"
       >

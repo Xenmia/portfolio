@@ -36,8 +36,8 @@ const AboutMe = () => {
   ];
 
   return (
-    <div className="flex flex-col xl:flex-row m-5 h-1/2 gap-8">
-      <div className="flex flex-col md:flex-row gap-8">
+    <div className="flex flex-col xl:flex-row my-5 lg:mx-16 h-1/2 gap-8 lg:gap-16">
+      <div className="flex flex-col md:flex-row gap-8 lg:gap-16">
         <Image
           alt="Portrait Picture"
           src={Portrait}
@@ -79,7 +79,11 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center w-full xl:w-1/3 h-fit place-self-center text-text-light dark:text-text-dark border-2 border-muted-light dark:border-muted-dark rounded-2xl bg-background-light dark:bg-background-dark">
+      <div
+        className="flex flex-col items-center w-full py-5 xl:w-1/3 h-fit place-self-center 
+      text-text-light dark:text-text-dark border-2 
+      border-muted-light dark:border-muted-dark rounded-2xl bg-background-light dark:bg-background-dark"
+      >
         <h1 className="text-4xl pb-2">Skills:</h1>
         <ul
           className={`p-4 flex xl:flex-col flex-wrap justify-center xl:justify-start gap-4 ${kanit.className}`}
