@@ -17,27 +17,30 @@ const inter = Inter({
 
 const ProjectPreview = () => {
   return (
-    <div className="flex flex-col flex-2/3 border-border-light dark:border-border-dark border-2 bg-elements-light dark:bg-elements-dark m-5 overflow-hidden origin-left rounded-4xl shadow-2xl">
+    <div
+      className="flex flex-col flex-2/3 border-muted-light dark:border-muted-dark border-2 
+    bg-background-light dark:bg-background-dark m-5 overflow-hidden origin-left rounded-4xl shadow-2xl"
+    >
       <a
-        className="decoration-t-light dark:decoration-t-dark flex"
+        className="decoration-text-light dark:decoration-text-dark flex"
         href="https://boanex.netlify.app/"
       >
         <Image
-          src={mockup}
+          className="w-2/3 border-2 border-muted-light dark:border-muted-dark"
           alt="project preview"
-          className="w-2/3 border-b-2 hover:scale-[101%] origin-top-left border-border-light dark:border-border-dark"
+          src={mockup}
         />
         <div className="flex flex-col w-1/3 *:px-4 *:pt-2 *:underline-offset-4 hover:*:underline">
           <h1
             className={
-              "text-4xl text-t-light dark:text-t-dark " + kanit.className
+              "text-4xl text-text-light dark:text-text-dark " + kanit.className
             }
           >
             BOANEX
           </h1>
           <h1
             className={
-              "text-2xl text-subtext-light dark:text-subtext-dark" +
+              "text-2xl text-text-light dark:text-text-dark font-semibold " +
               inter.className
             }
           >
@@ -46,7 +49,8 @@ const ProjectPreview = () => {
         </div>
       </a>
       <Link
-        className="text-interactive-light dark:text-interactive-dark hover:underline text-4xl place-self-end my-auto px-4 pb-2"
+        className="text-text-light dark:text-text-dark hover:underline text-4xl place-self-end my-auto px-4 pb-2 font-semibold 
+        hover:text-secondary-light dark:hover:text-secondary-dark "
         href="../projects"
       >
         See more projects

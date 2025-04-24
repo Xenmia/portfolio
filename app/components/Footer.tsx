@@ -4,7 +4,10 @@ import logoUrl from "../pictures/logo.svg?url";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col justify-center items-center bg-elements-light py-5 dark:bg-elements-dark">
+    <div
+      className="flex flex-col justify-center items-center bg-background-light dark:bg-background-dark py-5 
+    border-t-2 border-muted-light dark:border-muted-dark"
+    >
       <p>© 2024 Maxim Banaga. All rights reserved.</p>
       <a href="/file.pdf" download="CV.pdf">
         Resume

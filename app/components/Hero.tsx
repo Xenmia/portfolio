@@ -69,7 +69,7 @@ const Hero = () => {
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
   return (
     <div className="flex flex-col w-[100vw] p-32">
-      <div className="bg-elements-light dark:bg-elements-dark p-2 w-fit shadow-2xl border-2 border-border-light dark:border-border-dark">
+      <div className="bg-background-light dark:bg-background-dark p-4 w-fit shadow-2xl border-2 border-muted-light dark:border-muted-dark">
         <h1 className="text-4xl">{randomQuote.quote}</h1>
         <h1 className="text-xl text-subtext-light dark:text-subtext-dark">
           {randomQuote.author}

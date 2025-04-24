@@ -13,8 +13,8 @@ const ThemeToggle = () => {
     <button
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
       className="absolute right-4 flex flex-row cursor-pointer
-       bg-elements-light dark:bg-elements-dark rounded-lg border-2 border-border-light dark:border-border-dark 
-       hover:bg-interactive-light dark:hover:bg-interactive-dark hover:scale-110 active:scale-90"
+       bg-primary-light dark:bg-primary-dark rounded-lg border-2 border-muted-light dark:border-muted-dark 
+       hover:bg-primary-light dark:hover:bg-primary-dark hover:scale-110 active:scale-90"
     >
       {resolvedTheme === "light" ? (
         <CiLight size="2em" className="dark:[visibility:hidden]" />

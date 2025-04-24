@@ -36,17 +36,21 @@ const AboutMe = () => {
   ];
 
   return (
-    <div
-      className="flex m-5 rounded-[2rem] min-h-80 h-1/2 overflow-hidden border-2 
-    border-border-light dark:border-border-dark bg-elements-light dark:bg-elements-dark shadow-2xl"
-    >
-      <Image alt="Portrait Picture" src={Portrait} className="" />
+    <div className="flex m-5 h-1/2 gap-8">
+      <Image
+        alt="Portrait Picture"
+        src={Portrait}
+        className="rounded-2xl border-muted-light dark:border-muted-dark border-2 w-1/2"
+      />
       <div
-        className="flex flex-col justify-evenly border-r-2 
-      border-border-light dark:border-border-dark text-t-light dark:text-t-dark"
+        className="flex flex-col justify-evenly
+      text-text-light dark:text-text-dark gap-5"
       >
-        <div className="border-b-2 border-border-light dark:border-border-dark">
-          <h1 className={"text-4xl p-4 w-fit" + kanit.className}>
+        <div
+          className="border-2 border-muted-light dark:border-muted-dark rounded-2xl 
+        bg-background-light dark:bg-background-dark"
+        >
+          <h1 className={"text-4xl p-4 w-fit " + kanit.className}>
             Maxim Banaga
           </h1>
           <h2 className={"text-xl p-4 " + inter.className}>
@@ -57,7 +61,10 @@ const AboutMe = () => {
             <b>Next.js</b>, and <b>Tailwind CSS</b> to sharpen my skills.
           </h2>
         </div>
-        <div className="">
+        <div
+          className="border-2 border-muted-light dark:border-muted-dark rounded-2xl 
+        bg-background-light dark:bg-background-dark"
+        >
           <h1 className={"text-4xl p-4 w-fit " + kanit.className}>Passions</h1>
           <h2 className={"text-xl p-4 " + inter.className}>
             I thrive at the intersection of logic and creativity—whether I’m
@@ -68,15 +75,15 @@ const AboutMe = () => {
           </h2>
         </div>
       </div>
-      <div className="flex flex-col justify-center w-1/3 text-t-light dark:text-t-dark">
+      <div
+        className="flex flex-col justify-center w-1/3 h-fit place-self-center text-text-light dark:text-text-dark border-2 border-muted-light dark:border-muted-dark rounded-2xl 
+        bg-background-light dark:bg-background-dark"
+      >
         <ul className={"p-4 " + kanit.className}>
           <h1 className="text-4xl pb-2">Skills: </h1>
           {skills.map((skill, index) => (
             <li key={index} className="list-none text-xl py-2">
-              <span
-                className="flex flex-row justify-between items-center hover:translate-x-1 
-              hover:text-interactive-light dark:hover:text-interactive-dark cursor-default"
-              >
+              <span className="flex flex-row justify-between items-center">
                 {skill.text}
                 {skill.icon}
               </span>
