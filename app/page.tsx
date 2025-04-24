@@ -7,12 +7,13 @@ import ProjectPreview from "./components/ProjectPreview";
 export default function Home() {
   return (
     <div
-      className="flex flex-col bg-background-light dark:bg-background-dark bg-[image:var(--gradient-bg-light)] 
-      dark:bg-[image:var(--gradient-bg-dark)] bg-size-[40px_40px] bg-center bg-repeat text-text-light dark:text-text-dark"
+      className="flex flex-col bg-background-light dark:bg-background-dark 
+      bg-[url(./pictures/pattern-light.png)] dark:bg-[url(./pictures/pattern-dark.png)] 
+      bg-center bg-repeat text-text-light dark:text-text-dark"
     >
       <Hero />
       <AboutMe />
-      <div className="flex flex-row mt-30">
+      <div className="flex lg:flex-row flex-col my-30 ">
         <ProjectPreview />
         <ContactMe />
       </div>
