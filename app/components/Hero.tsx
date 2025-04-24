@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollReveal from "./ScrollReveal";
 
 const Hero = () => {
   const quotes = [
@@ -68,14 +69,20 @@ const Hero = () => {
 
   const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
   return (
-    <div className="flex flex-col w-screen md:px-32 px-6 py-32">
+    //
+    <ScrollReveal
+      direction="left"
+      amount={0.8}
+      once={false}
+      className="flex flex-col w-screen md:mx-32 mx-6 my-32"
+    >
       <div className="bg-background-light dark:bg-background-dark p-4 w-fit shadow-2xl border-2 border-muted-light dark:border-muted-dark">
         <h1 className="text-4xl">{randomQuote.quote}</h1>
         <h1 className="text-xl text-subtext-light dark:text-subtext-dark">
           {randomQuote.author}
         </h1>
       </div>
-    </div>
+    </ScrollReveal>
   );
 };
 

@@ -9,7 +9,7 @@ import {
   TbBrandGit,
   TbBrandVisualStudio,
 } from "react-icons/tb";
-
+import ScrollReveal from "./ScrollReveal";
 import { FaLinux } from "react-icons/fa";
 import { Kanit, Inter } from "next/font/google";
 
@@ -38,21 +38,33 @@ const AboutMe = () => {
   return (
     <div className="flex flex-col xl:flex-row my-5 mx-4 lg:mx-16 h-1/2 gap-8 lg:gap-16">
       <div className="flex flex-col md:flex-row gap-8 lg:gap-16">
-        <Image
-          alt="Portrait Picture"
-          src={Portrait}
-          className="rounded-2xl border-muted-light place-self-start lg:place-self-center dark:border-muted-dark 
-          border-2 size-[100px] md:size-[400px] h-auto md:max-h-[400px] md:min-w-[400px]"
-        />
+        <ScrollReveal
+          direction="left"
+          delay={0.5}
+          amount={1}
+          once={false}
+          className="place-self-start lg:place-self-center"
+        >
+          <Image
+            alt="Portrait Picture"
+            src={Portrait}
+            className="rounded-2xl border-muted-light  dark:border-muted-dark 
+            border-2 size-[100px] md:size-[400px] h-auto md:max-h-[400px] md:min-w-[400px]"
+          />
+        </ScrollReveal>
         <div
           className="flex flex-col justify-evenly
-      text-text-light dark:text-text-dark gap-5"
+        text-text-light dark:text-text-dark gap-5"
         >
-          <div
+          <ScrollReveal
+            direction="down"
+            delay={0.5}
+            amount={1}
+            once={false}
             className="border-2 border-muted-light dark:border-muted-dark rounded-2xl 
-        bg-background-light dark:bg-background-dark"
+          bg-background-light dark:bg-background-dark"
           >
-            <h1 className={"text-4xl p-4 w-fit " + kanit.className}>
+            <h1 className={"text-4xl p-4 w-fit  " + kanit.className}>
               Maxim Banaga
             </h1>
             <h2 className={"text-xl p-4 " + inter.className}>
@@ -62,8 +74,12 @@ const AboutMe = () => {
               building projects with <b>React</b>, <b>TypeScript</b>,{" "}
               <b>Next.js</b>, and <b>Tailwind CSS</b> to sharpen my skills.
             </h2>
-          </div>
-          <div
+          </ScrollReveal>
+          <ScrollReveal
+            direction="up"
+            delay={0.5}
+            amount={1}
+            once={false}
             className="border-2 border-muted-light dark:border-muted-dark rounded-2xl 
         bg-background-light dark:bg-background-dark"
           >
@@ -77,10 +93,14 @@ const AboutMe = () => {
               in systems, while my love for art and nature keeps my designs
               human-centered. Always learning, always tinkering.
             </h2>
-          </div>
+          </ScrollReveal>
         </div>
       </div>
-      <div
+      <ScrollReveal
+        direction="right"
+        delay={0.5}
+        amount={1}
+        once={false}
         className="flex flex-col items-center w-full py-5 xl:w-1/3 h-fit place-self-center 
       text-text-light dark:text-text-dark border-2 
       border-muted-light dark:border-muted-dark rounded-2xl bg-background-light dark:bg-background-dark"
@@ -98,7 +118,7 @@ const AboutMe = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </ScrollReveal>
     </div>
   );
 };

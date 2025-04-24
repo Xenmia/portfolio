@@ -3,6 +3,7 @@ import mockup from "../pictures/boanex-mockup-dark.webp";
 import Image from "next/image";
 import { Kanit, Inter } from "next/font/google";
 import Link from "next/link";
+import ScrollReveal from "./ScrollReveal";
 
 const kanit = Kanit({
   subsets: ["latin"],
@@ -17,7 +18,11 @@ const inter = Inter({
 
 const ProjectPreview = () => {
   return (
-    <div
+    <ScrollReveal
+      direction="left"
+      duration={0.5}
+      amount={1}
+      once={false}
       className="flex flex-col lg:flex-row flex-2/3 border-muted-light dark:border-muted-dark border-2 
     bg-background-light dark:bg-background-dark overflow-hidden origin-left rounded-4xl shadow-2xl"
     >
@@ -58,7 +63,7 @@ const ProjectPreview = () => {
           See more projects
         </Link>
       </div>
-    </div>
+    </ScrollReveal>
   );
 };
 

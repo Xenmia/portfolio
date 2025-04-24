@@ -2,6 +2,7 @@
 import { useRef, useState } from "react";
 import { Kanit } from "next/font/google";
 import Socials from "./Socials";
+import ScrollReveal from "./ScrollReveal";
 
 const kanit = Kanit({
   subsets: ["latin"],
@@ -17,6 +18,7 @@ const ContactMe = () => {
   );
   const classNameInput =
     "text-xl border-2 border-muted-light dark:border-muted-dark rounded-md p-1.5 ";
+  const classNameH1 = "text-2xl ";
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setResult("Sending...");
@@ -44,9 +46,15 @@ const ContactMe = () => {
     }
   };
 
+  console.log("Regenerated");
+
   return (
-    <div
-      className="flex flex-col flex-1/3 p-4 border-muted-light dark:border-muted-dark border-2 rounded-2xl 
+    <ScrollReveal
+      direction="right"
+      duration={0.4}
+      amount={1}
+      once={false}
+      className="will-change-[transform,opacity] flex flex-col flex-1/3 p-4 border-muted-light dark:border-muted-dark border-2 rounded-2xl 
     bg-background-light dark:bg-background-dark shadow-2xl"
     >
       <h1 className={"text-4xl self-center " + kanit.className}>CONTACT ME</h1>
@@ -55,7 +63,7 @@ const ContactMe = () => {
         ref={formRef}
         className="flex flex-col *:my-2 *:outline-0"
       >
-        <h1 className="text-2xl">Name:</h1>
+        <h1 className={classNameH1}>Name:</h1>
         <input
           type="text"
           name="name"
@@ -63,7 +71,7 @@ const ContactMe = () => {
           required
           className={classNameInput}
         />
-        <h1 className="text-2xl">Email</h1>
+        <h1 className={classNameH1}>Email</h1>
         <input
           type="email"
           name="email"
@@ -71,7 +79,7 @@ const ContactMe = () => {
           required
           className={classNameInput}
         />
-        <h1 className="text-2xl">Message</h1>
+        <h1 className={classNameH1}>Message</h1>
         <textarea
           name="message"
           placeholder="Your message"
@@ -80,14 +88,14 @@ const ContactMe = () => {
         <button
           type="submit"
           className="p-1.5 border-2 font-bold border-muted-light dark:border-muted-dark bg-primary-light
-          dark:bg-primary-dark rounded-md hover:scale-[101%] active:scale-95 cursor-pointer"
+        dark:bg-primary-dark rounded-md hover:scale-[101%] active:scale-95 cursor-pointer"
         >
           SEND
         </button>
       </form>
       <span className={"text-xl " + spanColor}>{result}</span>
       <Socials />
-    </div>
+    </ScrollReveal>
   );
 };
 
