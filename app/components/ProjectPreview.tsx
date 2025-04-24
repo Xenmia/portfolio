@@ -23,7 +23,7 @@ const ProjectPreview = () => {
       duration={0.5}
       amount={1}
       once={false}
-      className="flex flex-col lg:flex-row flex-2/3 border-muted-light dark:border-muted-dark border-2 
+      className="flex flex-col lg:flex-row flex-2/3 h-fit self-end border-muted-light dark:border-muted-dark border-2 
     bg-background-light dark:bg-background-dark overflow-hidden origin-left rounded-4xl shadow-2xl"
     >
       <a href="https://boanex.netlify.app/">
