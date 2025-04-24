@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import logoUrl from "../pictures/logo.svg?url";
 
 const Footer = () => {
   return (
@@ -12,7 +11,7 @@ const Footer = () => {
       <a href="/file.pdf" download="CV.pdf">
         Resume
       </a>
-      <p className="flex flex-col justify-center">
+      <p>
         Let&apos;s colaborate! Reach out at{" "}
         <a
           href="mailto:banagamaxim13@gmail.com"
@@ -22,7 +21,7 @@ const Footer = () => {
         </a>
       </p>
       <p>Made with Next.js & coffee.</p>
-      <Image src={logoUrl} alt="Logo" className="size-12" />
+      <div className="size-14 mt-2 bg-[url(./pictures/logo-light.svg)] dark:bg-[url(./pictures/logo-dark.svg)] bg-size-[48px] bg-no-repeat bg-center" />
     </div>
   );
 };
