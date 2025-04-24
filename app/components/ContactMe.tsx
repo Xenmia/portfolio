@@ -15,6 +15,8 @@ const ContactMe = () => {
   const [spanColor, setSpanColor] = useState<string>(
     "text-yellow-500 dark:text-yellow-300"
   );
+  const classNameInput =
+    "text-xl border-2 border-muted-light dark:border-muted-dark rounded-md p-1.5 ";
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setResult("Sending...");
@@ -44,8 +46,8 @@ const ContactMe = () => {
 
   return (
     <div
-      className="flex flex-col flex-1/3 my-5 mr-5 p-4 border-border-light dark:border-border-dark border-2 rounded-2xl 
-    bg-elements-light dark:bg-elements-dark shadow-2xl"
+      className="flex flex-col flex-1/3 my-5 mr-5 p-4 border-muted-light dark:border-muted-dark border-2 rounded-2xl 
+    bg-background-light dark:bg-background-dark shadow-2xl"
     >
       <h1 className={"text-4xl self-center " + kanit.className}>CONTACT ME</h1>
       <form
@@ -59,7 +61,7 @@ const ContactMe = () => {
           name="name"
           placeholder="John Doe"
           required
-          className="text-xl border-2 border-border-light dark:border-border-dark rounded-md p-1.5 outline-0"
+          className={classNameInput}
         />
         <h1 className="text-2xl">Email</h1>
         <input
@@ -67,18 +69,18 @@ const ContactMe = () => {
           name="email"
           placeholder="you@example.com"
           required
-          className="text-xl border-2 border-border-light dark:border-border-dark rounded-md p-1.5"
+          className={classNameInput}
         />
         <h1 className="text-2xl">Message</h1>
         <textarea
           name="message"
           placeholder="Your message"
-          className="text-xl border-2 border-border-light dark:border-border-dark rounded-md p-1.5 resize-none"
+          className={classNameInput + " resize-none"}
         />
         <button
           type="submit"
-          className="p-1.5 border-2 font-bold border-border-light dark:border-border-dark bg-secondary-light
-          dark:bg-secondary-dark rounded-md hover:scale-[101%] active:scale-95 cursor-pointer"
+          className="p-1.5 border-2 font-bold border-muted-light dark:border-muted-dark bg-primary-light
+          dark:bg-primary-dark rounded-md hover:scale-[101%] active:scale-95 cursor-pointer"
         >
           SEND
         </button>
