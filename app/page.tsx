@@ -13,7 +13,7 @@ export default function Home() {
     >
       <Hero />
       <AboutMe />
-      <div className="flex lg:flex-row flex-col my-30 mx-16 gap-16 justify-between">
+      <div className="flex lg:flex-row flex-col my-30 mx-4 gap-8 lg:mx-16 lg:gap-16 justify-between">
         <ProjectPreview />
         <ContactMe />
       </div>

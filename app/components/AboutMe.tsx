@@ -36,12 +36,13 @@ const AboutMe = () => {
   ];
 
   return (
-    <div className="flex flex-col xl:flex-row my-5 lg:mx-16 h-1/2 gap-8 lg:gap-16">
+    <div className="flex flex-col xl:flex-row my-5 mx-4 lg:mx-16 h-1/2 gap-8 lg:gap-16">
       <div className="flex flex-col md:flex-row gap-8 lg:gap-16">
         <Image
           alt="Portrait Picture"
           src={Portrait}
-          className="rounded-2xl border-muted-light place-self-center dark:border-muted-dark border-2 size-[400px] h-auto md:max-h-[400px] md:min-w-[400px]"
+          className="rounded-2xl border-muted-light place-self-start lg:place-self-center dark:border-muted-dark 
+          border-2 size-[100px] md:size-[400px] h-auto md:max-h-[400px] md:min-w-[400px]"
         />
         <div
           className="flex flex-col justify-evenly
