@@ -30,7 +30,7 @@ const Socials = () => {
             }
           >
             {social.icon}
-            <h1 className="scale-0 origin-top text-t-light dark:text-t-dark animate-bounce">
+            <h1 className="lg:scale-0 origin-top text-text-light dark:text-text-dark animate-bounce">
               {social.name}
             </h1>
           </a>

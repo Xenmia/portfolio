@@ -34,10 +34,10 @@ const ContactMe = () => {
 
       if (data.success) {
         setSpanColor("text-green-800 dark:text-lime-400");
-        setResult("Form Submitted Successfully");
+        setResult("Sent Successfully");
         formRef.current.reset(); // TODO
       } else {
-        console.log("Error", data);
+        console.log("Error, try again later", data);
         setSpanColor("text-red-800 dark:text-red-400");
         setResult(data.message);
       }
@@ -46,7 +46,7 @@ const ContactMe = () => {
 
   return (
     <div
-      className="flex flex-col flex-1/3 my-5 mr-5 p-4 border-muted-light dark:border-muted-dark border-2 rounded-2xl 
+      className="flex flex-col flex-1/3 my-5 m-5 lg:ml-0 p-4 border-muted-light dark:border-muted-dark border-2 rounded-2xl 
     bg-background-light dark:bg-background-dark shadow-2xl"
     >
       <h1 className={"text-4xl self-center " + kanit.className}>CONTACT ME</h1>

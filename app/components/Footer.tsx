@@ -12,12 +12,17 @@ const Footer = () => {
       <a href="/file.pdf" download="CV.pdf">
         Resume
       </a>
-      <p>
+      <p className="flex flex-col justify-center">
         Let&apos;s colaborate! Reach out at{" "}
-        <a href="mailto:banagamaxim13@gmail.com">banagamaxim13@gmail.com</a>
+        <a
+          href="mailto:banagamaxim13@gmail.com"
+          className="text-primary-dark dark:text-primary-light"
+        >
+          banagamaxim13@gmail.com
+        </a>
       </p>
       <p>Made with Next.js & coffee.</p>
-      <Image src={logoUrl} alt="Logo" className="absolute right-5 size-12" />
+      <Image src={logoUrl} alt="Logo" className="size-12" />
     </div>
   );
 };
