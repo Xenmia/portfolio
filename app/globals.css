@@ -4,7 +4,7 @@
 
 @theme {
   /* LIGHT THEME */
-  --color-primary-light: #7986cb; /* primary buttons, links, active elements */
+  --color-primary-light: #4360f3; /* primary buttons, links, active elements */
   --color-secondary-light: #fbc02d; /* highlights, tags, secondary actions */
   --color-background-light: #f9f9f9; /* page background, containers */
   --color-surface-light: #ffffff; /* cards, modals, inputs */
