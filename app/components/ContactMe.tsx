@@ -2,6 +2,7 @@
 import { useRef, useState } from "react";
 import { Kanit } from "next/font/google";
 import Socials from "./Socials";
+import { motion } from "framer-motion";
 
 const kanit = Kanit({
   subsets: ["latin"],
@@ -43,11 +44,34 @@ const ContactMe = () => {
       }
     }
   };
+  const variants = {
+    hidden: {
+      opacity: 0,
+      x: "var(--x-start)",
+      y: 0,
+      scale: 0.8,
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      y: 0,
+      scale: 1,
+      transition: {
+        duration: 0.3,
+        delay: 0,
+        ease: "easeInOut",
+      },
+    },
+  };
 
   return (
-    <div
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.8 }}
+      variants={variants}
       className="flex flex-col flex-1/3 p-4 border-muted-light dark:border-muted-dark border-2 rounded-2xl 
-    bg-background-light dark:bg-background-dark shadow-2xl"
+    bg-background-light dark:bg-background-dark shadow-2xl sm:[--x-start:90] max-sm:[--x-start:0] "
     >
       <h1 className={"text-4xl self-center " + kanit.className}>CONTACT ME</h1>
       <form
@@ -87,7 +111,7 @@ const ContactMe = () => {
       </form>
       <span className={"text-xl " + spanColor}>{result}</span>
       <Socials />
-    </div>
+    </motion.div>
   );
 };
 
