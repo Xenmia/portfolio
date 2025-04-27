@@ -3,6 +3,7 @@ import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import ProjectPreview from "./components/ProjectPreview";
+import ScrollTrack from "./components/ScrollTrack";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <ContactMe />
       </div>
       <Footer />
+      <ScrollTrack />
     </div>
   );
 }

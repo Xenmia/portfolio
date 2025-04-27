@@ -1,11 +1,8 @@
-"use client";
 import Link from "next/link";
 import React from "react";
 import ThemeToggle from "./ButtonToggleTheme";
-import { motion, useScroll } from "framer-motion";
 
 const NavBar = () => {
-  const { scrollYProgress } = useScroll();
   return (
     <>
       <div className="flex flex-row sticky z-50 justify-center items-center w-full h-fit p-2 top-0 bg-background-light dark:bg-background-dark border-b-2 border-muted-light dark:border-muted-dark">
@@ -21,18 +18,6 @@ const NavBar = () => {
           </Link>
         </ul>
         <ThemeToggle />
-        <motion.div
-          style={{
-            scaleX: scrollYProgress,
-            position: "fixed",
-            bottom: 0,
-            left: 0,
-            right: 0,
-            height: 10,
-            originX: 0,
-            backgroundColor: "var(--color-secondary-light)",
-          }}
-        />
       </div>
     </>
   );
