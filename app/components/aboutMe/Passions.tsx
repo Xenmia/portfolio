@@ -41,8 +41,7 @@ const Passions = () => {
       whileInView="visible"
       viewport={{ once: true, amount: 0.8 }}
       variants={variants}
-      className="border-2 border-muted-light dark:border-muted-dark rounded-2xl 
-        bg-background-light dark:bg-background-dark sm:[--y-start:90] max-sm:[--y-start:0]"
+      className="border-2 border-muted-light dark:border-muted-dark rounded-2xl bg-background-light dark:bg-background-dark sm:[--y-start:90] max-sm:[--y-start:0]"
     >
       <h1 className={"text-4xl p-4 w-fit " + kanit.className}>Passions</h1>
       <h2 className={"text-xl p-4 " + inter.className}>
