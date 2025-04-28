@@ -108,10 +108,10 @@ const Hero = () => {
     >
       {randomQuote ? (
         <>
-          <h1 className="text-4xl text-text-light dark:text-text-dark">
+          <h1 className="text-4xl text-text-light dark:text-text-dark font-kanit">
             {randomQuote.quote}
           </h1>
-          <h1 className="text-xl text-subtext-light dark:text-subtext-dark">
+          <h1 className="text-xl text-subtext-light dark:text-subtext-dark font-inter">
             {randomQuote.author}
           </h1>
         </>

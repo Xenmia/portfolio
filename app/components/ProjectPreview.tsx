@@ -3,18 +3,6 @@ import mockup from "../pictures/boanex-mockup-dark.webp";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Kanit, Inter } from "next/font/google";
-
-const kanit = Kanit({
-  subsets: ["latin"],
-  display: "swap",
-  weight: "300",
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-});
 
 const ProjectPreview = () => {
   const variants = {
@@ -57,26 +45,17 @@ const ProjectPreview = () => {
           href="https://boanex.netlify.app/"
           className="*:underline-offset-4 hover:*:underline *:px-4 *:pt-2"
         >
-          <h1
-            className={
-              "text-4xl text-text-light dark:text-text-dark " + kanit.className
-            }
-          >
+          <h1 className="text-4xl text-text-light dark:text-text-dark font-kanit">
             BOANEX
           </h1>
-          <h1
-            className={
-              "text-2xl text-muted-light dark:text-muted-dark font-semibold " +
-              inter.className
-            }
-          >
+          <h1 className="text-2xl text-muted-light dark:text-muted-dark font-semibold font-inter">
             Business website built with HTML/CSS under tight constraints.
           </h1>
         </a>
         <Link
           className="text-text-light dark:text-text-dark hover:underline text-4xl 
           lg:place-self-end mt-8 lg:mt-auto place-self-center lg:px-4 pb-2 
-        hover:text-secondary-light dark:hover:text-secondary-dark "
+        hover:text-secondary-light dark:hover:text-secondary-dark font-kanit"
           href="../projects"
         >
           See more projects

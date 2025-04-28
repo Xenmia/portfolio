@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <>
       <div className="flex flex-row sticky z-50 justify-center items-center w-full h-fit p-2 top-0 bg-background-light dark:bg-background-dark border-b-2 border-muted-light dark:border-muted-dark">
-        <ul className="flex gap-4 text-text-light dark:text-text-dark justify-center text-2xl w-fit *:hover:text-secondary-light *:dark:hover:text-secondary-dark">
+        <ul className="flex gap-4 text-text-light dark:text-text-dark justify-center text-2xl w-fit *:hover:text-secondary-light *:dark:hover:text-secondary-dark font-kanit">
           <Link href="/" className="uppercase">
             Home
           </Link>

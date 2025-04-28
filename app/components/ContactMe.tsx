@@ -1,14 +1,7 @@
 "use client";
 import { useRef, useState } from "react";
-import { Kanit } from "next/font/google";
 import Socials from "./Socials";
 import { motion } from "framer-motion";
-
-const kanit = Kanit({
-  subsets: ["latin"],
-  display: "swap",
-  weight: "300",
-});
 
 const ContactMe = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -17,8 +10,8 @@ const ContactMe = () => {
     "text-yellow-500 dark:text-yellow-300"
   );
   const classNameInput =
-    "text-xl border-2 border-muted-light dark:border-muted-dark rounded-md p-1.5 ";
-  const classNameH1 = "text-2xl ";
+    "text-xl border-2 border-muted-light dark:border-muted-dark rounded-md p-1.5 font-inter";
+  const classNameH1 = "text-2xl font-kanit ";
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setResult("Sending...");
@@ -74,7 +67,7 @@ const ContactMe = () => {
       className="flex flex-col flex-1/3 p-4 border-muted-light dark:border-muted-dark border-2 rounded-2xl 
     bg-background-light dark:bg-background-dark shadow-2xl sm:[--x-start:90] max-sm:[--x-start:0] "
     >
-      <h1 className={"text-4xl self-center " + kanit.className}>CONTACT ME</h1>
+      <h1 className={"text-4xl self-center font-kanit"}>CONTACT ME</h1>
       <form
         onSubmit={onSubmit}
         ref={formRef}

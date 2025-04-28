@@ -10,13 +10,6 @@ import {
   TbBrandVisualStudio,
 } from "react-icons/tb";
 import { FaLinux } from "react-icons/fa";
-import { Kanit } from "next/font/google";
-
-const kanit = Kanit({
-  subsets: ["latin"],
-  display: "swap",
-  weight: "300",
-});
 
 const Skills = () => {
   const variants = {
@@ -57,10 +50,8 @@ const Skills = () => {
       text-text-light dark:text-text-dark border-2 sm:[--x-start:90] max-sm:[--x-start:0]
       border-muted-light dark:border-muted-dark rounded-2xl bg-background-light dark:bg-background-dark"
     >
-      <h1 className="text-4xl pb-2">Skills:</h1>
-      <ul
-        className={`p-4 flex xl:flex-col flex-wrap justify-center xl:justify-start gap-4 ${kanit.className}`}
-      >
+      <h1 className="text-4xl pb-2 font-kanit">Skills:</h1>
+      <ul className="p-4 flex xl:flex-col flex-wrap justify-center xl:justify-start gap-4 font-kanit">
         {skills.map((skill, index) => (
           <li key={index} className="list-none text-xl">
             <span className="flex gap-2 items-center whitespace-nowrap">
