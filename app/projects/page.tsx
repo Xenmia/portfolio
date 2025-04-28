@@ -1,8 +1,12 @@
-import React from "react";
+import Background from "../components/Background";
+import ProjectSelect from "./components/ProjectSelect";
+
 const Projects = () => {
   return (
-    <div className="bg-primary-light dark:bg-primary-dark">
-      <p>Projects</p>
+    <div className="flex h-full w-screen overflow-hidden relative text-text-light dark:text-text-dark ">
+      <Background />
+
+      <ProjectSelect />
     </div>
   );
 };
