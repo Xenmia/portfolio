@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import portraitPicture from "../../pictures/Portrait_Placeholder.png";
+import portraitPicture from "../../pictures/placeholder.png";
 import Image from "next/image";
 
 const Portrait = () => {
