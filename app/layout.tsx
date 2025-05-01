@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
-      <body className="bg-background-light dark:bg-background-dark flex flex-col h-screen">
+      <body className="bg-background-light dark:bg-background-dark flex flex-col h-dvh">
         <Providers>
           <NavBar />
           {children}
