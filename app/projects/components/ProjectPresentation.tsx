@@ -37,7 +37,7 @@ const ProjectPresentation: React.FC<Props> = ({
       layout
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ delay: 0.2, duration: 0.3, ease: "EaseInOut" }}
+      transition={{ delay: 0.4, duration: 0.3, ease: "easeInOut" }}
       className="flex flex-col md:flex-row bg-background-light dark:bg-background-dark rounded-2xl shadow-lg overflow-hidden h-full"
     >
       <motion.a
@@ -47,8 +47,11 @@ const ProjectPresentation: React.FC<Props> = ({
         whileHover={{ scale: 1.03 }}
         whileTap={{ scale: 0.97 }}
         initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4, duration: 0.3 }}
+        animate={{
+          opacity: 1,
+          y: 0,
+          transition: { delay: 0.6, duration: 0.3 },
+        }}
         className="relative w-full md:w-1/2 h-48 md:h-auto"
       >
         <Image
@@ -64,8 +67,11 @@ const ProjectPresentation: React.FC<Props> = ({
         <motion.h2
           layout
           initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.3 }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: { delay: 0.8, duration: 0.3 },
+          }}
           className="text-xl md:text-2xl font-bold text-text-light dark:text-text-dark mb-2"
         >
           {title}
@@ -74,15 +80,18 @@ const ProjectPresentation: React.FC<Props> = ({
         <motion.p
           layout
           initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.8, duration: 0.3 }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: { delay: 1, duration: 0.3 },
+          }}
           className="text-base md:text-lg text-text-light dark:text-text-dark flex-1"
         >
           {displayText}
           {truncated && (
             <button
               onClick={() => setIsExpanded((prev) => !prev)}
-              className="text-primary-dark dark:text-primary-light ml-2 underline"
+              className="text-primary-dark dark:text-primary-light ml-2 underline cursor-pointer"
             >
               {isExpanded ? "Show Less" : "Read More"}
             </button>
@@ -95,8 +104,11 @@ const ProjectPresentation: React.FC<Props> = ({
           rel="noopener noreferrer"
           whileHover={{ x: 5 }}
           initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1, duration: 0.3 }}
+          animate={{
+            opacity: 1,
+            y: 0,
+            transition: { delay: 1.2, duration: 0.3 },
+          }}
           className="mt-4 inline-block text-center w-1/2 self-center text-primary-dark dark:text-primary-light border-2 border-primary-dark dark:border-primary-light px-4 py-2 rounded-xl"
         >
           Visit Project
