@@ -1,0 +1,52 @@
+[
+  {
+    "title": "GOOGLE",
+    "description": "A multinational technology company specializing in internet-related services and products, including search engines, cloud computing, advertising technologies, and consumer electronics. Founded in 1998 by Larry Page and Sergey Brin, Google revolutionized information accessibility through its PageRank algorithm. Today, it operates products like Gmail, YouTube, Android, and Google Workspace while pursuing moonshot projects via Alphabet Inc. Its mission to 'organize the world’s information' continues to drive innovations in AI, quantum computing, and sustainability.",
+    "address": "https://www.google.com/"
+  },
+  {
+    "title": "OPENAI",
+    "description": "An artificial intelligence research laboratory focused on developing safe and beneficial AGI (Artificial General Intelligence). Founded in 2015 by Elon Musk, Sam Altman, and others, OpenAI gained recognition for breakthroughs like GPT language models and DALL-E image generator. It offers API access to AI tools while advocating for ethical AI development. Notable projects include ChatGPT for conversational AI and Codex for programming assistance. OpenAI operates under a capped-profit model to balance innovation with responsibility.",
+    "address": "https://openai.com/"
+  },
+  {
+    "title": "NASA",
+    "description": "The National Aeronautics and Space Administration, established in 1958, leads U.S. civilian space exploration and aeronautics research. Known for Apollo moon missions, Hubble Telescope, and Mars rovers, NASA conducts cutting-edge research in astrophysics, Earth science, and heliophysics. Current initiatives include Artemis lunar exploration, James Webb Space Telescope operations, and partnerships with private space companies. NASA also plays a key role in climate monitoring and International Space Station operations.",
+    "address": "https://www.nasa.gov/"
+  },
+  {
+    "title": "WIKIPEDIA",
+    "description": "A free, multilingual online encyclopedia created and maintained by volunteers through collaborative editing. Launched in 2001 by Jimmy Wales and Larry Sanger, Wikipedia contains over 60 million articles across 300+ languages. Operated by the Wikimedia Foundation, it relies on donations and follows strict neutral point-of-view policies. Despite controversies about accuracy, studies show its reliability rivals traditional encyclopedias. It remains one of the top-10 most visited websites globally.",
+    "address": "https://www.wikipedia.org/"
+  },
+  {
+    "title": "TED",
+    "description": "A media organization devoted to spreading ideas through short, powerful talks (18 minutes or less). Founded in 1984 as a tech conference, TED now covers science, culture, and global issues. The annual TED Conference features live speakers, while TED.com offers free access to 4,000+ talks translated into 100+ languages. Notable talks include Sir Ken Robinson on education and Amy Cuddy on body language. TEDx programs enable independent local events worldwide.",
+    "address": "https://www.ted.com/"
+  },
+  {
+    "title": "WWF",
+    "description": "The World Wide Fund for Nature, an international conservation organization working to protect endangered species and habitats. Established in 1961, WWF operates in over 100 countries focusing on climate change, deforestation, and sustainable development. Known for its panda logo, it combines fieldwork with policy advocacy. Major initiatives include Earth Hour and conservation of iconic species like tigers and pandas. WWF collaborates with governments and corporations to promote ecological sustainability.",
+    "address": "https://www.worldwildlife.org/"
+  },
+  {
+    "title": "GITHUB",
+    "description": "A web-based platform for version control and collaborative software development using Git. Acquired by Microsoft in 2018, GitHub hosts over 200 million repositories, facilitating open-source projects and private code management. Features include issue tracking, CI/CD integration, and GitHub Copilot AI programming assistant. It serves as a hub for developer communities and hosts critical projects like Linux kernel development. GitHub Education and GitHub Pages support learning and web hosting.",
+    "address": "https://github.com/"
+  },
+  {
+    "title": "KHAN ACADEMY",
+    "description": "A non-profit educational platform offering free online courses in math, science, computing, and humanities. Founded in 2008 by Sal Khan, it uses video lessons and interactive exercises with a mastery learning approach. Partnering with institutions like NASA and MIT, it provides test prep for SAT, MCAT, and more. Used by students and teachers worldwide, Khan Academy emphasizes personalized learning through its adaptive technology. All content is available in 50+ languages.",
+    "address": "https://www.khanacademy.org/"
+  },
+  {
+    "title": "EFF",
+    "description": "The Electronic Frontier Foundation, a nonprofit defending digital privacy, free speech, and innovation since 1990. Known for challenging NSA surveillance and fighting for net neutrality, EFF provides tools like HTTPS Everywhere and Privacy Badger. It litigates landmark cases, publishes cybersecurity guides, and hosts the annual DEF CON hacker conference. EFF’s activism spans encryption rights, copyright reform, and protection against government overreach in digital spaces.",
+    "address": "https://www.eff.org/"
+  },
+  {
+    "title": "RED CROSS",
+    "description": "An international humanitarian network providing emergency assistance, disaster relief, and health education. Founded in 1863, the International Red Cross and Red Crescent Movement operates in 192 countries with 14 million volunteers. Known for blood donation services and first aid training, it responds to conflicts and natural disasters under the principles of neutrality and impartiality. The American Red Cross also supports military families and shelters during emergencies.",
+    "address": "https://www.redcross.org/"
+  }
+]
