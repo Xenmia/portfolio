@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
@@ -11,7 +10,7 @@ interface Props {
   /** Project title */
   title: string;
   /** External link to project */
-  address: string;
+  href: string;
   /** Project description */
   description: string;
   /** Maximum length for truncated description (default: 400 chars) */
@@ -21,7 +20,7 @@ interface Props {
 const ProjectPresentation: React.FC<Props> = ({
   previewPicture = PlaceholderPicture,
   title,
-  address,
+  href,
   description,
   maxDescriptionLength = 400,
 }) => {
@@ -41,8 +40,7 @@ const ProjectPresentation: React.FC<Props> = ({
       className="flex flex-col md:flex-row bg-background-light dark:bg-background-dark rounded-2xl shadow-lg overflow-hidden h-full"
     >
       <motion.a
-        href={address}
-        target="_blank"
+        href={href}
         rel="noopener noreferrer"
         whileHover={{ scale: 1.03 }}
         whileTap={{ scale: 0.97 }}
@@ -55,17 +53,18 @@ const ProjectPresentation: React.FC<Props> = ({
         className="relative w-full md:w-1/2 h-48 md:h-auto"
       >
         <Image
+          aria-label="Project Preview Picture"
           src={previewPicture}
           alt={`${title} preview`}
           fill
           className="object-cover"
-          placeholder="blur"
         />
       </motion.a>
 
       <div className="flex flex-col justify-between p-4 w-full md:w-1/2">
         <motion.h2
           layout
+          aria-label="Project Title"
           initial={{ opacity: 0, y: 10 }}
           animate={{
             opacity: 1,
@@ -79,6 +78,7 @@ const ProjectPresentation: React.FC<Props> = ({
 
         <motion.p
           layout
+          aria-label="Project Description"
           initial={{ opacity: 0, y: 10 }}
           animate={{
             opacity: 1,
@@ -99,9 +99,9 @@ const ProjectPresentation: React.FC<Props> = ({
         </motion.p>
 
         <motion.a
-          href={address}
-          target="_blank"
+          href={href}
           rel="noopener noreferrer"
+          aria-label="Open project"
           whileHover={{ x: 5 }}
           initial={{ opacity: 0, y: 10 }}
           animate={{
