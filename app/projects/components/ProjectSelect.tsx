@@ -1,27 +1,28 @@
 "use client";
 import { motion, AnimatePresence, wrap } from "framer-motion";
-import { useState, useEffect, KeyboardEvent } from "react";
+import { useState, KeyboardEvent } from "react";
 import { BiRightArrow, BiLeftArrow } from "react-icons/bi";
+import { StaticImageData } from "next/image";
 import ProjectPresentation from "./ProjectPresentation";
-import Loading from "./Loading";
+import WeatherAppPreview from "../pictures/placeholder.webp";
 
 type Project = {
   title: string;
-  description: string;
-  address: string;
-  preview?: string;
+  desc: string;
+  href: string;
+  preview?: string | StaticImageData;
 };
 
 const ProjectSelect = () => {
-  const [projects, setProjects] = useState<Project[] | null>(null);
+  const projects: Project[] = [
+    {
+      title: "Weather App" /** The title of the project */,
+      desc: "This is a basic weather app with features such as: current weather, weather forecast, sunrise and sunset, moon phase etc." /** Used as the description of the project */,
+      href: "/projects/weather" /** Used for href in next/link */,
+      preview: WeatherAppPreview /** Project preview picture */,
+    },
+  ];
   const [[page, direction], setPage] = useState<number[]>([0, 0]);
-  useEffect(() => {
-    fetch("api/projects")
-      .then((res) => res.json())
-      .then((data: Project[]) => setProjects(data));
-  }, []);
-
-  if (!projects) return <Loading />;
 
   const classNameButton =
     "absolute z-2 bottom-2 -translate-y-1/2 max-sm:hidden bg-background-light/80 dark:bg-background-dark/80 text-text-light dark:text-text-dark cursor-pointer px-4 font-extrabold text-2xl hover:scale-105 border-primary-light active:scale-95 transition-all duration-300 ease-in ";
@@ -81,27 +82,37 @@ const ProjectSelect = () => {
           className="h-full w-screen absolute flex flex-col shrink-0 p-2 "
         >
           <ProjectPresentation
-            address={projects[projectIndex].address}
+            previewPicture={projects[projectIndex].preview}
+            href={projects[projectIndex].href}
             title={projects[projectIndex].title}
-            description={projects[projectIndex].description}
+            description={projects[projectIndex].desc}
           />
         </motion.div>
       </AnimatePresence>
       <button
         aria-label="Previous project"
-        className={classNameButton + "left-1"}
+        className={
+          classNameButton + "left-1" + (projects.length === 1 ? " hidden" : "")
+        }
         onClick={() => paginate(-1)}
       >
         <BiLeftArrow />
       </button>
       <button
         aria-label="Next project"
-        className={classNameButton + "right-1"}
+        className={
+          classNameButton + "right-1" + (projects.length === 1 ? " hidden" : "")
+        }
         onClick={() => paginate(1)}
       >
         <BiRightArrow />
       </button>
-      <div className="flex rounded-full p-1 gap-1 absolute z-2 bottom-1 left-[50dvw] -translate-1/2 bg-muted-light dark:bg-muted-dark ">
+      <div
+        className={
+          "flex rounded-full p-1 gap-1 absolute z-2 bottom-1 left-[50dvw] -translate-1/2 bg-muted-light dark:bg-muted-dark " +
+          (projects.length === 1 ? "hidden" : "")
+        }
+      >
         {projects.map((_, index) => (
           <button
             tabIndex={0}
